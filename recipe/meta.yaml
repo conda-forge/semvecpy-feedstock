@@ -18,8 +18,12 @@ requirements:
   host:
     - pip
     - python >3.5
+    - bitarray
+    - numpy
   run:
     - python >3.5
+    - bitarray
+    - numpy
 
 test:
   imports:
