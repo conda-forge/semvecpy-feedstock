@@ -1,5 +1,5 @@
 {% set name = "semvecpy" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a416eb9002ce651103f6156cc5eb760d18fb971004ad69f5af1771a3453b9be1
+  sha256: 02004199ce8a586abba87818d2c75e6effd7177d54ae7c755ac9ec8eb1a324cd
 
 build:
   number: 0
