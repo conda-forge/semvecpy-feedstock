@@ -1,17 +1,17 @@
 {% set name = "semvecpy" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.14" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be43a8c95b3611a4b1062ba95eb4fa82f33c72709a5a24d4549bb313929e307d
+  sha256: 61676d13d0eb0db941b928fb9b82e7b08889759549bc753d0131997292a88d0c
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
